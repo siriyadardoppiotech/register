@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on darwin)" generated="2024-09-26T16:15:41.373665" rpa="false" schemaversion="5">
+<suite id="s1" name="TC01" source="/Users/7d080017/Desktop/untitled folder/testcase/TC01.robot">
+<test id="s1-t1" name="Automate Product Purchase" line="6">
+<kw name="Open Browser" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T16:15:41.471461" level="INFO">Opening browser 'gc' to base url 'https://training-platform.doppio-tech.com/'.</msg>
+<arg>${url}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T16:15:41.471364" elapsed="3.665484"/>
+</kw>
+<status status="PASS" start="2024-09-26T16:15:41.471138" elapsed="3.666230"/>
+</kw>
+<kw name="Click user Icon" owner="home_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${home_locator_click_user_icon}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.137986" elapsed="0.013850"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T16:15:45.152087" level="INFO">Clicking element 'xpath=//*[@id="app"]/section/header/ul/div/div[2]/div[2]/span'.</msg>
+<arg>${home_locator_click_user_icon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.151954" elapsed="0.043215"/>
+</kw>
+<status status="PASS" start="2024-09-26T16:15:45.137768" elapsed="0.057736"/>
+</kw>
+<kw name="Go to Log In page" owner="home_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${home_locator_GTL_CSignin}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.196189" elapsed="0.009164"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T16:15:45.205578" level="INFO">Clicking element 'xpath=//div[@class="ant-form-item-control-input-content"]//button[@class="css-eq3tly ant-btn ant-btn-default button-login"]'.</msg>
+<arg>${home_locator_GTL_CSignin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.205460" elapsed="0.036107"/>
+</kw>
+<status status="PASS" start="2024-09-26T16:15:45.195848" elapsed="0.047747"/>
+</kw>
+<kw name="Input Email" owner="register_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T16:15:45.245039" level="INFO">Typing text 'doptest00@gmail.com' into text field 'xpath=//*[@id="basic_username"]'.</msg>
+<arg>${regis_locator_input-mail}</arg>
+<arg>${Register_Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.244779" elapsed="0.126083"/>
+</kw>
+<arg>${Register_Email}</arg>
+<status status="PASS" start="2024-09-26T16:15:45.243990" elapsed="0.126950"/>
+</kw>
+<kw name="Input Password" owner="register_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T16:15:45.371459" level="INFO">Typing text 'Sj123456789*' into text field 'xpath=//*[@id="basic_password"]'.</msg>
+<arg>${regis_locator_input-pass}</arg>
+<arg>${Register_Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.371337" elapsed="0.171858"/>
+</kw>
+<arg>${Register_Password}</arg>
+<status status="PASS" start="2024-09-26T16:15:45.371137" elapsed="0.172144"/>
+</kw>
+<kw name="Input Confirm Password" owner="register_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T16:15:45.543857" level="INFO">Typing text 'Sj123456789*' into text field 'xpath=//*[@id="basic_confirmPassword"]'.</msg>
+<arg>${regis_locator_input-CFpass}</arg>
+<arg>${Register_Confirm_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.543740" elapsed="0.046177"/>
+</kw>
+<arg>${Register_Confirm_pass}</arg>
+<status status="PASS" start="2024-09-26T16:15:45.543530" elapsed="0.046474"/>
+</kw>
+<kw name="Click Register Button" owner="register_page">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-26T16:15:45.590585" level="INFO">Clicking button 'xpath=//*[@id="app"]/section/div/div/form/div[4]/div/div/div/div/button'.</msg>
+<arg>${regis_locator_Click_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.590463" elapsed="0.033767"/>
+</kw>
+<status status="PASS" start="2024-09-26T16:15:45.590244" elapsed="0.034064"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T16:15:50.625326" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T16:15:45.624587" elapsed="5.000810"/>
+</kw>
+<status status="PASS" start="2024-09-26T16:15:41.470857" elapsed="9.154690"/>
+</test>
+<status status="PASS" start="2024-09-26T16:15:41.375482" elapsed="9.250353"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC01">TC01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
