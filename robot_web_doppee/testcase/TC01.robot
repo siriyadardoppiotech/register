@@ -15,5 +15,6 @@ Automate Product Purchase
     Sleep    5
 
    
+   fg
 
 
